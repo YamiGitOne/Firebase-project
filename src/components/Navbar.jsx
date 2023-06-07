@@ -19,11 +19,14 @@ const Navbar = () => {
             {
                 user ?
                 <>
-                <NavLink to="/">Inicio</NavLink>
-                <button onClick={handleClickLogout}>Logout</button>
+                <NavLink to="/">Inicio | </NavLink>
+                <button onClick={handleClickLogout}>Logout | </button>
                 </>
                 :
-                <NavLink to="/login">Login</NavLink>
+                <>
+                 <NavLink to="/login">Login | </NavLink>
+                 <NavLink to="/register">Register | </NavLink>
+                </>
             }
         </div>
     );
